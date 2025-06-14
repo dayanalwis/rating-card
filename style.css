@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass';
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.ratings {
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color:hsl(217, 12%, 30%);
+}
+
+.text-box {
+    color: hsl(0, 100%, 100%);
+    line-height: 1.5;
+}
+
+.text-box p {
+    font-size: 15px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box button {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color:hsl(217, 12%, 30%);
+    color: hsl(0, 100%, 100%);
+    
+}
+
+.btn-box button:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+
+.submit {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;  
+    background-color: white;
+    text-decoration: none;
+    color:  hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+}
+
+.submit a {
+    text-decoration: none;
+    color:  hsl(216, 12%, 8%);
+}
+
+.submit:hover{
+    background-color: hsl(25, 97%, 53%);
+    
+}
+
+.card {
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+
+.card img {
+    width: 120px;
+    display: block;
+    align-self: center;
+}
+
+.text-box-2 {
+    background-color: hsl(217, 12%, 30%);
+    padding: 5px;
+    width: 80%;
+    border-radius: 25px;
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+}
+
+.text-box-3 {
+    text-align: center;
+    line-height: 1.5;
+    color: hsl(0, 100%, 100%);
+}
+
+@media (max-width :375px) {
+    .ratings,.card {
+        width: 90%;
+        padding: 20px;
+    }
+}
